@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box !important;
+
+}
+
+h1{
+    font-size: 80px;
+    color: rgb(27, 27, 19);
+}
+.Brand{
+    color: rgb(12, 6, 6);
+}
+.nav-i{
+    margin-left: 100px;
+}
+/* .nav-item{
+    margin: 0px 10%;
+} */
+.a-btn{
+    padding: 15px 30px;
+    background: #2E6EFF;
+    color: white;
+    border-radius: 5px;
+}
+.a-btn:hover{
+    color: white;
+}
+.active{
+    color: #FE753F;
+
+}
+.header_top .navbar .collapse ul li .nav-link{
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+.header_top .navbar .collapse ul li{
+    margin: 0px 30px 0px 20px;
+}
+.buld{
+    width: 100%;
+}
