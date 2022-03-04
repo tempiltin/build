@@ -1,44 +1,51 @@
 import React from 'react';
 import { Link } from "react-router-dom"
-import { Container, } from "reactstrap"
-import "../styles/navbar.css"
+import { } from "reactstrap"
 function Nav() {
     return (
         <>
-            <header className='header_top'>
-                <Container>
-                    <nav className='navbar navbar-expand-lg navbar-light '>
-                        <div className='container-fluid'>
-                            <button className='navbar-toggler' type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className='navbar-toggler-icon'></span>
-                            </button>
-
-                            <Link className='navbar-brand' to="/"><img src="/img/logo.svg" alt="" /></Link>
-                            <div className=' collapse navbar-collapse  ' id="navbarTogglerDemo03">
-
-                                <ul className='nav-i navbar-nav  me-auto mb-2 mb-lg-0 '>
-                                    <li class="nav-item">
-                                        <Link className='nav-link active' aria-current="page" to="/">Home</Link>
-                                    </li>
-                                    <li class="nav-item">
-                                        <Link className='nav-link ' aria-current="page" to="/properties">Properties </Link>
-                                    </li>
-                                    <li class="nav-item">
-                                        <Link className='nav-link ' aria-current="page" to="/about">About us</Link>
-                                    </li>
-                                    <li class="nav-item">
-                                        <Link className='nav-link ' aria-current="page" to="/blog">Blog</Link>
-                                    </li>
+            <div id="preloader">
+                <div className="jumper">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <header className="header-area header-sticky">
+        <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <nav className="main-nav">
+           
+                        <Link to="/" className="logo"> Logo </Link>
+                    
+                        <ul className="nav">
+                            <li className="scroll-to-section"><Link to="#top" className="active">Home</Link></li>
+                            <li className="scroll-to-section"><Link to="#about">About</Link></li>
+                  
+                            <li className="scroll-to-section"><Link to="#menu">Menu</Link></li>
+                            <li className="scroll-to-section"><Link to="#chefs">Chefs</Link></li> 
+                            <li className="submenu">
+                                <Link to="">Features</Link>
+                                <ul>
+                                    <li><Link to="#">Features Page 1</Link></li>
+                                    <li><Link to="#">Features Page 2</Link></li>
+                                    <li><Link to="#">Features Page 3</Link></li>
+                                    <li><Link to="#">Features Page 4</Link></li>
                                 </ul>
-                                <Link className='a-btn ' to="/contact" tabindex="-1" aria-disabled="true">Contact us</Link>
-
-                            </div>
-
-
-                        </div>
+                            </li>
+                           
+                            <li className="scroll-to-section"><Link to="#reservation">Contact Us</Link></li> 
+                        </ul>        
+                        <Link className='menu-trigger' to="#!">
+                            <span>Menu</span>
+                        </Link>
+              
                     </nav>
-                </Container>
-            </header>
+                </div>
+            </div>
+        </div>
+    </header>
         </>
     );
 }
